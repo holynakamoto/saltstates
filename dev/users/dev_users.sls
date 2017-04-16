@@ -1,4 +1,4 @@
-user_mo_ali:
+user_kat_douglas:
   user.present:
     - name: kat.douglas
     - fullname: Katherine Douglas
@@ -9,7 +9,7 @@ user_mo_ali:
     - groups:
       - wheel
 
-mo_ali_key:
+kat_douglas_key:
   ssh_auth.present:
     - name: kat.douglas
     - user: kat.douglas
