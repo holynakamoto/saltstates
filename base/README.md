@@ -1,1 +1,1 @@
-# salt_class
+# Salt Base Environment

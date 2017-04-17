@@ -1,2 +1,2 @@
-# saltstates
+# Saltstates
 ## All salt environments
