@@ -1,0 +1,1 @@
+# Pillar for base environment
