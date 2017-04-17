@@ -1,16 +1,15 @@
-user_mo_ali:
+{% for user, data in piller.get('admin_users', {}).items() %}
+user_{{ user }}:
   user.present:
-    - name: mo.ali
-    - fullname: Mo Ali
-    - shell: /bin/bash
-    - home: /home/mo.ali
-    - uid: 10000
-    - gid_from_name: True
-    - groups:
-      - wheel
+    - name: {{ user }}
+    - fullname: {{ data['fullname'] }}
+    - shell: {{ data['shell'] }}
+    - home: {{ data['home'] }}
+    - uid: {{ data['uid'] }}
+    - gid_from_name: {{ data['gid_from_name'] }}
+    - groups: {{ data['groups'] }}
 
-mo_ali_key:
+{{ user }}_key:
   ssh_auth.present:
-    - name: mo.ali
-    - user: mo.ali
-    - source: salt://users/keys/mo.ali.pub
+    - name: {{ data['ssh_key'] }}
+    - user: {{ user }}
