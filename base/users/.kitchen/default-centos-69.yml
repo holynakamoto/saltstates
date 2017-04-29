@@ -1,0 +1,7 @@
+---
+hostname: 127.0.0.1
+port: '2200'
+username: vagrant
+ssh_key: /Users/akhterali/Documents/Udemy/SaltStack/saltstates/base/users/.kitchen/kitchen-vagrant/kitchen-users-default-centos-69/.vagrant/machines/default/virtualbox/private_key
+last_action: converge
+last_error: 

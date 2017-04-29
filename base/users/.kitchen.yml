@@ -1,0 +1,26 @@
+driver:
+  name: vagrant
+
+platforms:
+  - name: centos-6.9
+
+provisioner:
+  name: salt_solo
+  salt_bootstrap_url: https://bootstrap.saltstack.com
+  salt_version: latest
+  salt_install: bootstrap
+  state_collection: True
+  collection_name: users
+  state_top:
+    base:
+      '*':
+        - users
+  pillars-from-files:
+    users.sls: test_pillar/users.sls
+  pillars:
+    top.sls:
+      base:
+        '*':
+          - users
+suites:
+  - name: default
