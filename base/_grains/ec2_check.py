@@ -18,9 +18,9 @@ def ec2_check():
         grains['cloud_info'].append({'provider': 'Amazon'})
         grains['cloud_info'][0]['instance_id'] = instance_id
         grains['cloud_info'][0]['instance_type'] = instance_type
-        print grains
+        return grains
     except URLError:
-        print False
+        return False
 
 if __name__ == '__main__':
     ec2_check()
