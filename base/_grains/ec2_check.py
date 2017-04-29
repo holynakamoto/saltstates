@@ -3,6 +3,7 @@
 import urllib2
 from urllib2 import URLError
 
+
 def ec2_check():
     # Initialize grains dictionary
     grains = {}
