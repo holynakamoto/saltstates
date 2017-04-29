@@ -32,3 +32,5 @@ def ec2_check():
     except HTTPError:
         return False
 
+if __name__ == '__main__':
+    ec2_check()
