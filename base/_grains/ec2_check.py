@@ -15,12 +15,15 @@ def ec2_check():
         # Set instnace Id and instance type
         instance_id = urllib2.urlopen(base_url + 'instance-id')
         instance_type = urllib2.urlopen(base_url + 'instance-type')
+        instance_id = instance_id.read()
+        instance_type = instance_type.read()
+
         grains['cloud_info'].append({'provider': 'Amazon'})
         grains['cloud_info'][0]['instance_id'] = instance_id
         grains['cloud_info'][0]['instance_type'] = instance_type
-        return grains
+        print grains
     except URLError:
-        return False
+        print False
 
 if __name__ == '__main__':
     ec2_check()
