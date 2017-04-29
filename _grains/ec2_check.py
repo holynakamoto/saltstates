@@ -20,11 +20,10 @@ def ec2_check():
         instance_region = instance_region.read()
 
         # Set grains provider to Amazon
-        if not grains['cloud_info']:
-            grains['cloud_info'] = []
-            grains['cloud_info'].append({'provider': 'Amazon'})
-            grains['cloud_info'].append({'instance_type': instnace_type})
-            grains['cloud_info'].append({'instnace_region': instnace_region})
+        grains['cloud_info'] = []
+        grains['cloud_info'].append({'provider': 'Amazon'})
+        grains['cloud_info'].append({'instance_type': instnace_type})
+        grains['cloud_info'].append({'instnace_region': instnace_region})
 
             return grains
         else:
