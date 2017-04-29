@@ -26,8 +26,6 @@ def ec2_check():
         grains['cloud_info'].append({'instnace_region': instnace_region})
 
         return grains
-        else:
-            return False
     except HTTPError:
         return False
 
