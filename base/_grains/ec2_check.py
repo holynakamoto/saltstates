@@ -21,9 +21,9 @@ def ec2_check():
 
         # Set grains provider to Amazon
         grains['cloud_info'] = []
-        grains['cloud_info'].append({'provider': 'Amazon'})
-        grains['cloud_info'].append({'instance_type': instance_type})
-        grains['cloud_info'].append({'instnace_region': instance_region})
+        grains['cloud_info'][0] = {'provider': 'Amazon'}
+        grains['cloud_info'][0] = {'instance_type': instance_type}
+        grains['cloud_info'][0] = {'instnace_region': instance_region}
 
         return grains
     except HTTPError:
