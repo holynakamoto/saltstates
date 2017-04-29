@@ -2,6 +2,7 @@ admin_users:
   mo.ali:
     fullname: Mo Ali
     shell: /bin/bash
+    home: /home/mo.ali
     uid: 10000
     gid_from_name: true
     groups:
@@ -10,6 +11,7 @@ admin_users:
   kat.douglas:
     fullname: Katherine Douglas
     shell: /bin/bash
+    home: /home/kat.douglas
     uid: 10001
     gid_from_name: true
     groups:
@@ -18,6 +20,7 @@ admin_users:
   david.gonzalez:
     fullname: David Gonzalez
     shell: /bin/bash
+    home: /home/david.gonzalez
     uid: 10002
     gid_from_name: true
     groups: []
@@ -25,6 +28,7 @@ admin_users:
   tony.montana:
     fullname: Tony Montana
     shell: /bin/bash
+    home: /home/tony.montana
     uid: 10003
     gid_from_name: true
     groups: []
