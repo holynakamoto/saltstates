@@ -11,7 +11,7 @@ def check_development_hostname():
     # Test hostname condition
     if 'vagrant' in hostname.lower():
         grains['cloud_info'] = []
-        grains.append({'provider': 'vagrant'})
+        grains['cloud_info'].append({'provider': 'vagrant'})
 
     return grains
 
