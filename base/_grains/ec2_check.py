@@ -18,7 +18,7 @@ def ec2_check():
         # Instiate grains key cloud info
         grains['cloud_info'] = []
 
-        grains['cloud_info'].append({'providier': 'Amazon'})
+        grains['cloud_info'].append({'provider': 'Amazon'})
         grains['cloud_info'][0]['instance_id'] = instance_id
         grains['cloud_info'][0]['instance_type'] = instance_type
         return grains
