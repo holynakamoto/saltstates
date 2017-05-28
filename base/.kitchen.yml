@@ -20,5 +20,11 @@ provisioner:
           - users
 suites:
   - name: default
-  - name: web01
-  - name: web02
+    provisioner:
+      state_top_from_file: False
+      state_top:
+        'base':
+          '*':
+            - users
+            - apache
+            - flask_app
