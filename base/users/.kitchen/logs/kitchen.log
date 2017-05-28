@@ -1,0 +1,3 @@
+I, [2017-05-04T20:54:16.159599 #20264]  INFO -- Kitchen: -----> Starting Kitchen (v1.16.0)
+I, [2017-05-04T20:54:16.264379 #20264]  INFO -- Kitchen: -----> Converging <default-centos-69>...
+I, [2017-05-04T20:54:18.155397 #20264]  INFO -- Kitchen: -----> Kitchen is finished. (0m2.00s)

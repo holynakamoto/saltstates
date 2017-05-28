@@ -1,6 +1,7 @@
 Vagrant.configure("2") do |config|
   ## Choose your base box
   config.vm.box = "bento/centos-6.7"
+  config.vm.hostname = "vagrant.localhost"
 
   ## For masterless, mount your salt file root
   config.vm.synced_folder ".", "/srv/saltstates/"

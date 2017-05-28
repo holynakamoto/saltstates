@@ -1,0 +1,73 @@
+I, [2017-05-04T20:54:16.264541 #20264]  INFO -- default-centos-69: -----> Converging <default-centos-69>...
+I, [2017-05-04T20:54:16.265055 #20264]  INFO -- default-centos-69: Preparing files for transfer
+I, [2017-05-04T20:54:16.265104 #20264]  INFO -- default-centos-69: Preparing salt-minion
+I, [2017-05-04T20:54:16.265592 #20264]  INFO -- default-centos-69: Preparing pillars into /srv/pillar
+I, [2017-05-04T20:54:16.267465 #20264]  INFO -- default-centos-69: Preparing state collection
+I, [2017-05-04T20:54:16.275273 #20264]  INFO -- default-centos-69: Preparing state_top
+I, [2017-05-04T20:54:17.118194 #20264]  INFO -- default-centos-69: You asked for latest and you have 2016.11.4 installed, sweet!
+I, [2017-05-04T20:54:17.154943 #20264]  INFO -- default-centos-69: Transferring files to <default-centos-69>
+I, [2017-05-04T20:54:17.648063 #20264]  INFO -- default-centos-69: [WARNING ] Unable to find IPv6 record for "default-centos-69.vagrantup.com" causing a 10 second timeout when rendering grains. Set the dns or /etc/hosts for IPv6 to clear this.
+I, [2017-05-04T20:54:18.111503 #20264]  INFO -- default-centos-69: [WARNING ] Public Key hashing currently defaults to "md5". This will change to "sha256" in the Nitrogen release.
+I, [2017-05-04T20:54:18.112168 #20264]  INFO -- default-centos-69: [WARNING ] Public Key hashing currently defaults to "md5". This will change to "sha256" in the Nitrogen release.
+I, [2017-05-04T20:54:18.120632 #20264]  INFO -- default-centos-69: [WARNING ] Public Key hashing currently defaults to "md5". This will change to "sha256" in the Nitrogen release.
+I, [2017-05-04T20:54:18.120687 #20264]  INFO -- default-centos-69: [WARNING ] Public Key hashing currently defaults to "md5". This will change to "sha256" in the Nitrogen release.
+I, [2017-05-04T20:54:18.120710 #20264]  INFO -- default-centos-69: [0;32mlocal:[0;0m
+I, [2017-05-04T20:54:18.120730 #20264]  INFO -- default-centos-69: [0;36m----------[0;0m
+I, [2017-05-04T20:54:18.120752 #20264]  INFO -- default-centos-69:     [0;36m      ID: cloud_info[0;0m
+I, [2017-05-04T20:54:18.120771 #20264]  INFO -- default-centos-69:     [0;36mFunction: grains.present[0;0m
+I, [2017-05-04T20:54:18.120787 #20264]  INFO -- default-centos-69:     [0;36m  Result: True[0;0m
+I, [2017-05-04T20:54:18.120804 #20264]  INFO -- default-centos-69:     [0;36m Comment: Set grain cloud_info to [OrderedDict([('provider', 'Vagrant')])][0;0m
+I, [2017-05-04T20:54:18.120822 #20264]  INFO -- default-centos-69:     [0;36m Started: 00:54:18.277246[0;0m
+I, [2017-05-04T20:54:18.120840 #20264]  INFO -- default-centos-69:     [0;36mDuration: 1.636 ms[0;0m
+I, [2017-05-04T20:54:18.120857 #20264]  INFO -- default-centos-69: [0;36m     Changes:   
+I, [2017-05-04T20:54:18.120898 #20264]  INFO -- default-centos-69:        [0;36m----------[0;0m
+I, [2017-05-04T20:54:18.120920 #20264]  INFO -- default-centos-69:        [0;36mcloud_info[0;0m:
+I, [2017-05-04T20:54:18.120941 #20264]  INFO -- default-centos-69:            [0;32m|_[0;0m
+I, [2017-05-04T20:54:18.120960 #20264]  INFO -- default-centos-69:              [0;36m----------[0;0m
+I, [2017-05-04T20:54:18.120981 #20264]  INFO -- default-centos-69:              [0;36mprovider[0;0m:
+I, [2017-05-04T20:54:18.121001 #20264]  INFO -- default-centos-69:                  [0;32mVagrant[0;0m[0;0m
+I, [2017-05-04T20:54:18.121017 #20264]  INFO -- default-centos-69: [0;32m----------[0;0m
+I, [2017-05-04T20:54:18.121032 #20264]  INFO -- default-centos-69:     [0;32m      ID: user_fake.user.1[0;0m
+I, [2017-05-04T20:54:18.121049 #20264]  INFO -- default-centos-69:     [0;32mFunction: user.present[0;0m
+I, [2017-05-04T20:54:18.121067 #20264]  INFO -- default-centos-69:     [0;32m    Name: fake.user.1[0;0m
+I, [2017-05-04T20:54:18.121082 #20264]  INFO -- default-centos-69:     [0;32m  Result: True[0;0m
+I, [2017-05-04T20:54:18.121101 #20264]  INFO -- default-centos-69:     [0;32m Comment: User fake.user.1 is present and up to date[0;0m
+I, [2017-05-04T20:54:18.121117 #20264]  INFO -- default-centos-69:     [0;32m Started: 00:54:18.279590[0;0m
+I, [2017-05-04T20:54:18.121144 #20264]  INFO -- default-centos-69:     [0;32mDuration: 26.285 ms[0;0m
+I, [2017-05-04T20:54:18.121161 #20264]  INFO -- default-centos-69: [0;32m     Changes:   [0;0m
+I, [2017-05-04T20:54:18.121176 #20264]  INFO -- default-centos-69: [0;32m----------[0;0m
+I, [2017-05-04T20:54:18.121191 #20264]  INFO -- default-centos-69:     [0;32m      ID: fake.user.1_key[0;0m
+I, [2017-05-04T20:54:18.121226 #20264]  INFO -- default-centos-69:     [0;32mFunction: ssh_auth.present[0;0m
+I, [2017-05-04T20:54:18.121258 #20264]  INFO -- default-centos-69:     [0;32m    Name: fake key 1[0;0m
+I, [2017-05-04T20:54:18.121274 #20264]  INFO -- default-centos-69:     [0;32m  Result: True[0;0m
+I, [2017-05-04T20:54:18.121292 #20264]  INFO -- default-centos-69:     [0;32m Comment: The authorized host key fake is already present for user fake.user.1[0;0m
+I, [2017-05-04T20:54:18.121320 #20264]  INFO -- default-centos-69:     [0;32m Started: 00:54:18.306166[0;0m
+I, [2017-05-04T20:54:18.121337 #20264]  INFO -- default-centos-69:     [0;32mDuration: 4.314 ms[0;0m
+I, [2017-05-04T20:54:18.121352 #20264]  INFO -- default-centos-69: [0;32m     Changes:   [0;0m
+I, [2017-05-04T20:54:18.121367 #20264]  INFO -- default-centos-69: [0;32m----------[0;0m
+I, [2017-05-04T20:54:18.121382 #20264]  INFO -- default-centos-69:     [0;32m      ID: user_fake.user.2[0;0m
+I, [2017-05-04T20:54:18.121399 #20264]  INFO -- default-centos-69:     [0;32mFunction: user.present[0;0m
+I, [2017-05-04T20:54:18.121414 #20264]  INFO -- default-centos-69:     [0;32m    Name: fake.user.2[0;0m
+I, [2017-05-04T20:54:18.121429 #20264]  INFO -- default-centos-69:     [0;32m  Result: True[0;0m
+I, [2017-05-04T20:54:18.121446 #20264]  INFO -- default-centos-69:     [0;32m Comment: User fake.user.2 is present and up to date[0;0m
+I, [2017-05-04T20:54:18.121461 #20264]  INFO -- default-centos-69:     [0;32m Started: 00:54:18.310601[0;0m
+I, [2017-05-04T20:54:18.121475 #20264]  INFO -- default-centos-69:     [0;32mDuration: 1.145 ms[0;0m
+I, [2017-05-04T20:54:18.121492 #20264]  INFO -- default-centos-69: [0;32m     Changes:   [0;0m
+I, [2017-05-04T20:54:18.121507 #20264]  INFO -- default-centos-69: [0;32m----------[0;0m
+I, [2017-05-04T20:54:18.121522 #20264]  INFO -- default-centos-69:     [0;32m      ID: fake.user.2_key[0;0m
+I, [2017-05-04T20:54:18.121536 #20264]  INFO -- default-centos-69:     [0;32mFunction: ssh_auth.present[0;0m
+I, [2017-05-04T20:54:18.121553 #20264]  INFO -- default-centos-69:     [0;32m    Name: fake key 2[0;0m
+I, [2017-05-04T20:54:18.121568 #20264]  INFO -- default-centos-69:     [0;32m  Result: True[0;0m
+I, [2017-05-04T20:54:18.121583 #20264]  INFO -- default-centos-69:     [0;32m Comment: The authorized host key fake is already present for user fake.user.2[0;0m
+I, [2017-05-04T20:54:18.121599 #20264]  INFO -- default-centos-69:     [0;32m Started: 00:54:18.311832[0;0m
+I, [2017-05-04T20:54:18.121615 #20264]  INFO -- default-centos-69:     [0;32mDuration: 1.247 ms[0;0m
+I, [2017-05-04T20:54:18.121629 #20264]  INFO -- default-centos-69: [0;32m     Changes:   [0;0m
+I, [2017-05-04T20:54:18.121644 #20264]  INFO -- default-centos-69: [0;36m
+I, [2017-05-04T20:54:18.121659 #20264]  INFO -- default-centos-69: Summary for local
+I, [2017-05-04T20:54:18.121674 #20264]  INFO -- default-centos-69: ------------[0;0m
+I, [2017-05-04T20:54:18.121691 #20264]  INFO -- default-centos-69: [0;32mSucceeded: 5[0;0m ([0;32mchanged=1[0;0m)
+I, [2017-05-04T20:54:18.121706 #20264]  INFO -- default-centos-69: [0;36mFailed:    0[0;0m
+I, [2017-05-04T20:54:18.121720 #20264]  INFO -- default-centos-69: [0;36m------------
+I, [2017-05-04T20:54:18.121734 #20264]  INFO -- default-centos-69: Total states run:     5[0;0m
+I, [2017-05-04T20:54:18.121749 #20264]  INFO -- default-centos-69: [0;36mTotal run time:  34.627 ms[0;0m
+I, [2017-05-04T20:54:18.155172 #20264]  INFO -- default-centos-69: Finished converging <default-centos-69> (0m1.89s).
