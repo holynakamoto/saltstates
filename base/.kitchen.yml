@@ -20,6 +20,9 @@ provisioner:
           - users
 suites:
   - name: default
+    verifier:
+      name: shell
+      command: python3 /usr/local/bin/testinfra -vvv test/integration/$KITCHEN_SUITE
     provisioner:
       state_top_from_file: False
       state_top:

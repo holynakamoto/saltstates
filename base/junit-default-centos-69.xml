@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="1" failures="0" name="pytest" skips="0" tests="1" time="0.031"><testcase classname="test.integration.default.testinfra.test_flask_port" file="test/integration/default/testinfra/test_flask_port.py" line="2" name="test_port_8000_is_listening" time="0.00248599052429"><error message="test setup failure">request = &lt;SubRequest &apos;TestinfraBackend&apos; for &lt;Function &apos;test_port_8000_is_listening&apos;&gt;&gt;
+tmpdir = local(&apos;/private/var/folders/fk/195yfz4d0dqgzvmrl79jwzn80000gn/T/pytest-of-akhterali/pytest-29/test_port_8000_is_listening0&apos;)
+
+    @pytest.fixture
+    def TestinfraBackend(request, tmpdir):
+        # Override the TestinfraBackend fixture,
+        # all testinfra fixtures (i.e. modules) depend on it.
+        ssh_config_file = tmpdir.join(SSH_CONFIG)
+        ssh_config_file.write(&apos;Host {0}\nUser {1}\nPort {2}\nIdentityFile {3}\n&apos;.format(
+                os.environ[&apos;KITCHEN_HOSTNAME&apos;],
+                os.environ[&apos;KITCHEN_USERNAME&apos;],
+                os.environ[&apos;KITCHEN_PORT&apos;],
+                os.environ[&apos;KITCHEN_SSH_KEY&apos;],
+            ))
+    
+    
+        # Return a dynamic created backend
+&gt;       return testinfra.backend.paramiko.ParamikoBackend(os.environ[&apos;KITCHEN_HOSTNAME&apos;], str(ssh_config_file), sudo=True)
+E       AttributeError: &apos;module&apos; object has no attribute &apos;paramiko&apos;
+
+test/conftest.py:23: AttributeError</error></testcase></testsuite>

@@ -1,1 +1,3 @@
-.vagrant/*
+.vagrant/
+base/.vagrant/
+base/.kitchen/

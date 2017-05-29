@@ -1,0 +1,5 @@
+testinfra
+pytest-logging
+paramiko
+pytest
+pyyaml

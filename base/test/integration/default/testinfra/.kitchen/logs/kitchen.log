@@ -1,0 +1,32 @@
+I, [2017-05-29T16:42:03.629771 #24410]  INFO -- Kitchen: -----> Starting Kitchen (v1.16.0)
+E, [2017-05-29T16:42:03.630036 #24410] ERROR -- Kitchen: ------Exception-------
+E, [2017-05-29T16:42:03.630084 #24410] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2017-05-29T16:42:03.630108 #24410] ERROR -- Kitchen: Message: Kitchen YAML file /Users/akhterali/Documents/Udemy/SaltStack/saltstates/base/test/integration/default/testinfra/.kitchen.yml does not exist.
+E, [2017-05-29T16:42:03.630118 #24410] ERROR -- Kitchen: ----------------------
+E, [2017-05-29T16:42:03.630147 #24410] ERROR -- Kitchen: ------Backtrace-------
+E, [2017-05-29T16:42:03.630156 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/loader/yaml.rb:71:in `read'
+E, [2017-05-29T16:42:03.630231 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:152:in `data'
+E, [2017-05-29T16:42:03.630267 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:131:in `suites'
+E, [2017-05-29T16:42:03.630280 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:182:in `filter_instances'
+E, [2017-05-29T16:42:03.630290 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:141:in `build_instances'
+E, [2017-05-29T16:42:03.630300 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:117:in `instances'
+E, [2017-05-29T16:42:03.630310 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:112:in `filtered_instances'
+E, [2017-05-29T16:42:03.630321 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:142:in `parse_subcommand'
+E, [2017-05-29T16:42:03.630331 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command/action.rb:35:in `block in call'
+E, [2017-05-29T16:42:03.630340 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2017-05-29T16:42:03.630354 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command/action.rb:34:in `call'
+E, [2017-05-29T16:42:03.630365 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/cli.rb:53:in `perform'
+E, [2017-05-29T16:42:03.630374 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/cli.rb:187:in `block (2 levels) in <class:CLI>'
+E, [2017-05-29T16:42:03.630397 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2017-05-29T16:42:03.630444 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2017-05-29T16:42:03.630467 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/cli.rb:334:in `invoke_task'
+E, [2017-05-29T16:42:03.630475 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2017-05-29T16:42:03.630484 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2017-05-29T16:42:03.630507 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/test-kitchen-1.16.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2017-05-29T16:42:03.630516 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2017-05-29T16:42:03.630528 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/gems/test-kitchen-1.16.0/bin/kitchen:13:in `<top (required)>'
+E, [2017-05-29T16:42:03.630550 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/bin/kitchen:22:in `load'
+E, [2017-05-29T16:42:03.630582 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/bin/kitchen:22:in `<main>'
+E, [2017-05-29T16:42:03.630607 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2017-05-29T16:42:03.630628 #24410] ERROR -- Kitchen: /Users/akhterali/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `<main>'
+E, [2017-05-29T16:42:03.630651 #24410] ERROR -- Kitchen: ----End Backtrace-----
