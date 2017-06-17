@@ -1,10 +1,12 @@
 {% if not salt.cmd.has_exec('supervisord') %}
 
-yum_deps:
-  pkg.installed:
-    - pkgs:
-      - python-setuptools
-      - python-pip
+{% set current_path = salt['environ.get']('PATH', '/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin') %}
+
+conda-path:
+   environ.set:
+     - name: PATH
+     - value: "/usr/local/bin:{{ current_path }}"
+     - update_minion: True
 
 upgrade_pip_setuptools:
   pip.installed:
@@ -14,7 +16,7 @@ upgrade_pip_setuptools:
     - upgrade: True
     - force_reinstall: True
     - require:
-      - pkg: yum_deps
+      - pkg:
 
 supervisor_packages:
   pip.installed:
