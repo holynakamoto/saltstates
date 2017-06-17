@@ -15,8 +15,6 @@ upgrade_pip_setuptools:
       - setuptools
     - upgrade: True
     - force_reinstall: True
-    - require:
-      - pkg:
 
 supervisor_packages:
   pip.installed:
