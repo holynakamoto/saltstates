@@ -20,5 +20,8 @@ provisioner:
           - users
 suites:
   - name: default
-  - name: web01
-  - name: web02
+  - name: web
+
+verifier:
+  name: shell
+  command: python3 /usr/local/bin/testinfra -vvv test/integration/$KITCHEN_SUITE
