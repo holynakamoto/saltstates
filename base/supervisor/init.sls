@@ -3,7 +3,7 @@
 {% set current_path = salt['environ.get']('PATH', '/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin') %}
 
 conda-path:
-   environ.set:
+   environ.setenv:
      - name: PATH
      - value: "/usr/local/bin:{{ current_path }}"
      - update_minion: True
