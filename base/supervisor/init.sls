@@ -5,7 +5,7 @@
 set_path:
   environ.setenv:
     - name: PATH
-    - value: "/usr/local/bin:{{ new_path }}"
+    - value: "/usr/local/bin{{ new_path }}"
     - update_minion: True
 
 upgrade_pip_setuptools:
