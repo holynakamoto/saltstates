@@ -1,12 +1,12 @@
 {% if not salt.cmd.has_exec('supervisord') %}
 
-{% set current_path = salt['environ.get']('PATH', '/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin') %}
+{% set new_path = salt['environ.get']('PATH' '/usr/sbin/:/usr/bin:/usr/:/bin:/sbin') %}
 
-conda-path:
-   environ.setenv:
-     - name: PATH
-     - value: "/usr/local/bin:{{ current_path }}"
-     - update_minion: True
+set_path:
+  environ.setenv:
+    - name: PATH
+    - value: "/usr/local/bin:{{ new_path }}"
+    - update_minion: True
 
 upgrade_pip_setuptools:
   pip.installed:
@@ -15,12 +15,13 @@ upgrade_pip_setuptools:
       - setuptools
     - upgrade: True
     - force_reinstall: True
+    - require:
+      - environ: set_path
 
 supervisor_packages:
   pip.installed:
     - pkgs:
       - supervisor
-      - pip
       - Distribute
     - force_reinstall: True
     - upgrade: True
