@@ -1,1 +1,4 @@
 Hello from salt!
+
+{% web01_ip = salt['mine.get']('web01', 'network.ip_addrs') %}
+{{ web01_ip['web01'][0] }}
