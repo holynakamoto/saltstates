@@ -8,6 +8,11 @@ set_path:
     - value: "/usr/local/bin{{ new_path }}"
     - update_minion: True
 
+install_pip:
+  pkg.installed:
+    - pkgs:
+      - python-pip
+
 upgrade_pip_setuptools:
   pip.installed:
     - pkgs:

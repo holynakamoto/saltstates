@@ -21,6 +21,11 @@ provisioner:
 suites:
   - name: default
   - name: web
+    provisioner:
+      grains:
+        role:
+          - development
+          - web
 
 verifier:
   name: shell
