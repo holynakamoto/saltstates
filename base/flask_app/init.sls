@@ -1,15 +1,5 @@
 include:
   - flask
-{% if 'development' in grains['role'] %}
-create_app:
-  file.managed:
-    - name: /opt/flask_app/app.py
-    - source: salt://flask_app/templates/development_app.py
-    - user: root
-    - group: root
-    - mode: 0755
-    - template: jinja
-{% else %}
 create_app:
   file.managed:
     - name: /opt/flask_app/app.py
@@ -18,6 +8,11 @@ create_app:
     - group: root
     - mode: 0755
     - template: jinja
+    - defaults:
+        web01_ip: '2.2.2.2'
+{% if 'development' not in grains['role'] %}
+    - context:
+        web01_ip: {{ salt['mine.get']('web01', 'network.ip_addrs')['web01'][0] }}
 {% endif %}
 
 create_supervisor_config:
