@@ -2,7 +2,7 @@ driver:
   name: vagrant
 
 platforms:
-  - name: centos-6.9
+  - name: centos-7.3
 
 provisioner:
   name: salt_solo
@@ -26,6 +26,11 @@ suites:
         role:
           - development
           - web
+  - name: logger
+    provisioner:
+      grains:
+        role:
+          - logger
 
 verifier:
   name: shell
