@@ -1,6 +1,6 @@
 include:
   - .elasticsearch
   - .filebeat
-  - .kibana
   - .logstash
+  - .kibana
   - java8

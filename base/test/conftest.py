@@ -10,7 +10,7 @@ SSH_CONFIG = '.ssh-config'
 def host(request, tmpdir):
 
     ssh_config_file = tmpdir.join(SSH_CONFIG)
-    ssh_config_file.write('Host {0}\nUser {1}\nPort {2}\nIdentityFile {3}\n'.format(
+    ssh_config_file.write('Host {0}\nUser {1}\nPort {2}\nIdentityFile {3}\n StrictHostKeyChecking no\n'.format(
         os.environ['KITCHEN_HOSTNAME'],
         os.environ['KITCHEN_USERNAME'],
         os.environ['KITCHEN_PORT'],

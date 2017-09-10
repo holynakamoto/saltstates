@@ -8,22 +8,20 @@ logstash_repo:
     - gpgkey: https://artifacts.elastic.co/GPG-KEY-elasticsearch
     - enabled: True
     - require_in:
-      - pkg: install_logstash
+      - cmd: install_logstash
 
 install_logstash:
-  pkg.installed:
-    - pkgs:
-      - logstash
-
+  cmd.run:
+    - name: yum -y install logstash
 
 enable_logstash:
   service.enabled:
     - name: logstash
     - require:
-      - pkg: install_logstash
+      - cmd: install_logstash
 
 start_logstash:
   service.running:
     - name: logstash
     - require:
-      - pkg: install_logstash
+      - cmd: install_logstash
