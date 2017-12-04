@@ -1,5 +1,5 @@
 enforce_salt_config:
   local.state.sls:
-    - tgt: {{ data['id'] }}
+    - tgt: {{ data['data']['id'] }}
     - args:
       - sshd
